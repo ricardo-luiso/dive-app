@@ -1,0 +1,146 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+p {
+    color: rgb(235, 235, 235);
+}
+
+/*GLOBALS*/
+.container {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto; /* Para centrar contenido horizontalmente */
+}
+
+.no__margin {
+    margin: 0;
+}
+
+.center__text {
+    text-align: center;
+}
+
+/*HEADER*/
+
+header {
+    background-color: skyblue;
+    border: red solid;
+}
+.nav__link {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .container__header {
+        display: flex;        
+        justify-content: space-between;
+        align-items: center;
+    }    
+}
+
+.navigation {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .navigation {
+        display: flex;        
+        gap: 2rem;
+    }
+}
+
+/*MAIN*/
+@media(min-width: 768px){
+    .dive__image {
+    background-image: url(./img/dive.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    }
+
+    .padding-text {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    }
+}
+
+.padding-text {
+    padding-top: 1.5rem;    
+    }
+
+.dive__image {
+    background-image: url(./img/dive.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+/*FOOTER*/
+@media (min-width: 768px) {
+    .container__footer {
+        display: flex;        
+        justify-content: space-between;
+        align-items: center;
+    }    
+}
+
+.text__footer {
+    font-weight: bold;
+    color: black;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+    border: red solid;
+    background-color: skyblue;
+}
+
+/*FORM*/
+form {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.label {
+    color:  rgb(235, 235, 235);
+}
+
+.field {
+    margin-bottom: 1rem;
+}
+
+.send__button {
+    margin-top: 1rem;
+}
